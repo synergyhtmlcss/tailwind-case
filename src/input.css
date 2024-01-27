@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header-button {
+    @apply uppercase border border-zinc-900 py-2 px-4 rounded-2xl dark:border-white;
+  }
+  .card-list-item {
+    @apply before:content-[url(../src/assets/mini.png)] before:mr-2 my-2;
+  }
+  .buy-button {
+    @apply absolute bottom-0 left-0 bg-superRed rounded-xl py-2 px-24 text-sm font-semibold text-white;
+  }
+  .main-image {
+    @apply mt-4 mb-14 md:my-0 md:flex-1 relative lg:h-[640px] md:h-[520px] sm:h-[400px] h-[285px];
+  }
+}
